@@ -3,11 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Keyboard from "./Keyboard";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Keyboard />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
