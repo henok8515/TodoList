@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TodoForm from "./Components/TodoForm";
 import TodoList from "./Components/TodoList";
 import "./App.css";
+import { Typography } from "@material-ui/core";
 const Local_Storage_key = "react-todo-list-todos";
 
 function App() {
@@ -36,7 +37,14 @@ function App() {
   }
   return (
     <div className="app-container">
-      <h1>add your daily Tasks</h1>
+      <Typography
+        variant="h2"
+        style={{
+          padding: 16,
+        }}
+      >
+        Add Todo
+      </Typography>
       <TodoForm addTodo={addTodo} />
       <TodoList
         removeTodo={removeTodo}

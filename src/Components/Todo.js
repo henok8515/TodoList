@@ -1,6 +1,7 @@
 import React from "react";
 import "./Todo.css";
-
+import CloseIcon from "@material-ui/icons/Close";
+import { IconButton, ListItem, Typography } from "@material-ui/core";
 function Todo({ todos, toogleComplete, removeTodo }) {
   function handleCheckboxClicke() {
     toogleComplete(todos.id);
@@ -9,12 +10,14 @@ function Todo({ todos, toogleComplete, removeTodo }) {
     removeTodo(todos.id);
   }
   return (
-    <div className="todo-container">
+    <ListItem className="todo-container">
       {console.log(toogleComplete)}
       {/* <input onClick={handleCheckboxClicke} type="checkbox" /> */}
-      <li>{todos.task}</li>
-      <button onClick={handleRemoveClick}>X</button>
-    </div>
+      <Typography variant="body1">{todos.task}</Typography>
+      <IconButton onClick={handleRemoveClick}>
+        <CloseIcon />
+      </IconButton>
+    </ListItem>
   );
 }
 

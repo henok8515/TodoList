@@ -1,11 +1,4 @@
-li {
-  margin: 0px 20px;
-  font-family: fantasy;
-  text-transform: capitalize;
-  color: rgb(8, 1, 49);
-  margin: 0px 10px;
-}
-button {
+/* button {
   box-decoration-break: clone;
   height: 20px;
 
@@ -15,19 +8,7 @@ button {
   display: flex;
   justify-content: space-around;
 }
-h1 {
-  text-transform: capitalize;
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(8, 1, 49);
-  font-size: 2.5em;
-}
 button {
   background-color: rgba(33, 151, 63, 0.575);
   cursor: pointer;
-}
-input {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-}
+} */
